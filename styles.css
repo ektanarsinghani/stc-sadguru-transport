@@ -37,7 +37,7 @@ button, input, textarea, select { font: inherit; }
 .menu-toggle { display: none; background: transparent; border: 1px solid #49617e; border-radius: 8px; color: white; padding: 8px 11px; font-size: 1.25rem; }
 .hero { background: #eaf0f7; position: relative; overflow: hidden; }
 .hero-image-wrap { width: 100%; background: #dce8f5; }
-.hero-banner { width: 100%; height: auto; max-height: 680px; object-fit: cover; object-position: center; }
+ .hero-banner {   display: block;   width: 100%;   height: auto;   max-height: none;   object-fit: contain;   object-position: center; } { width: 100%; height: auto; max-height: 680px; object-fit: cover; object-position: center; }
 .hero-overlay { padding: 0; }
 .hero-copy { max-width: 780px; padding: 44px 0 48px; }
 .eyebrow { color: #a96800; font-size: .76rem; letter-spacing: 2px; font-weight: 800; margin: 0 0 12px; }
@@ -136,7 +136,7 @@ details p { color: var(--muted); margin: 12px 0 0; }
 }
 @media (max-width: 650px) {
   .container { width: min(100% - 30px, 1160px); }
-  .hero-banner { min-height: 210px; object-fit: cover; }
+   .hero-banner {   min-height: 0;   height: auto;   max-height: none;   object-fit: contain; } { min-height: 210px; object-fit: cover; }
   .hero-copy { padding: 35px 0 42px; }
   .hero-copy h1 { letter-spacing: -.8px; }
   .hero-description { font-size: 1rem; }
